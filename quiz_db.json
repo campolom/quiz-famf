@@ -1,1 +1,841 @@
-[]
+[
+    {
+        "materia": "POLITICHE",
+        "question": "Corporate Finance e Finanza Internazionale \u2013 Giugno 2021\n\n1. Per identificare (o meno) la presenza di un VCd utilizzando il triangolo finanziario occorre\n\nanalizzare:",
+        "table_md": "",
+        "correct": "Nessuna delle risposte indicate",
+        "wrongs": [
+            "Lo stato patrimoniale degli ultimi due esercizi",
+            "L\u2019indebitamento finanziario dell\u2019impresa",
+            "L\u2019aliquota fiscale marginale"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "In qualsiasi settore operi, la societ\u00e0 che presenta il rapporto minore tra oneri finanziari sul capitale\n\ndi terzi e reddito operativo (rapporto inversamente determinato dall\u2019indice denominato ICR,\n\ninterest coverage ratio) \u00e8 quella che presenta una maggiore probabilit\u00e0 di avere un VCd",
+        "table_md": "",
+        "correct": "\u00c8 vero: le societ\u00e0 con un VCd hanno poco debito e un reddito operativo costante",
+        "wrongs": [
+            "Non \u00e8 vero: il VCd dipende solo dal reddito operativo",
+            "\u00c8 vero: le societ\u00e0 con un VCd hanno pi\u00f9 facilit\u00e0 ad aumentare il leverage",
+            "Non \u00e8 vero: il VCd non ha relazione con l\u2019ICR ma solo con il leverage"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "3. Nelle politiche di finanziamento orientate all\u2019aumento del livello di leverage, l\u2019EBITDA pu\u00f2\n\nrappresentare una trappola per il CFO. Perch\u00e9?",
+        "table_md": "",
+        "correct": "Gli investimenti sostitutivi potrebbero non essere sostenibili con un aumento del leverage",
+        "wrongs": [
+            "L\u2019EBITDA non tiene conto di come sostenere un aumento del leverage",
+            "Le societ\u00e0 con un vantaggio competitivo durevole hanno Depreciations & Amortization bassi ovvero inferiori ai competitors",
+            "La voce dell\u2019EBITDA Depreciations & Amortization a volte non \u00e8 compresa nell\u2019income statement ma nel cash flow statement"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". In USA le societ\u00e0 sono generalmente corporation quotate e il modello di corporate governance\n\nprevede una pi\u00f9 ampia possibilit\u00e0 di raccolta del capitale. I punti di debolezza sono:",
+        "table_md": "",
+        "correct": "Il management pu\u00f2 prendere decisioni eccessivamente orientate al breve termine al fine di massimizzare il valore delle azioni e i costi di agenzia possono essere elevati",
+        "wrongs": [
+            "Il management pu\u00f2 prendere decisioni eccessivamente orientate al lungo termine al fine di massimizzare il valore delle azioni e i costi di agenzia possono essere elevati",
+            "Il management \u00e8 controllato dagli azionisti con un sistema two-tired e il comitato di sorveglianza aumenta i costi di agenzia riducendo il valore",
+            "Il management \u00e8 remunerato con una parte variabili frequentemente rappresentata da stock option che non sono valutabili nel mercato azionario"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "In presenza di un VCd il Vi corrisponde non solo ai profitti che la societ\u00e0 genera, scontati\n\nperpetuamente al costo medio ponderato del capitale (wacc), ma tale valore, ricalcolato sulla base\n\ndegli utili non reinvestiti e scontati al wacc, \u00e8 aumentato del tasso di rendimento (ROIC) che si\n\nottiene anche sugli utili reinvestiti scontati al wacc e misurati utilizzando il tasso ritenzione degli\n\nstessi rispetto ai dividendi distribuiti (RR). Calcolate il Vi supponendo che esista un VCd utilizzando i\n\nseguenti valori: profitto = 100 euro/milioni, wacc = 9,5%, ROIC = 19% e RR= 0,6",
+        "table_md": "",
+        "correct": "1.684,2 euro/milioni",
+        "wrongs": [
+            "891,5 euro/milioni",
+            "5.687,5 euro/milioni",
+            "1.332,5 euro/milioni"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Un\u2019impresa con un margine di struttura e un margine di tesoreria positivi presenta:",
+        "table_md": "",
+        "correct": "Passivit\u00e0 correnti inferiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette",
+        "wrongs": [
+            "Passivit\u00e0 correnti superiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette",
+            "Passivit\u00e0 correnti inferiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto inferiore alle immobilizzazioni nette",
+            "Passivit\u00e0 correnti superiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto inferiore alle immobilizzazioni nette"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il CFO di una societ\u00e0 non quotata (ABC Srl) individua 4 comparables appartenenti al settore di\n\nriferimento (produzione acciai speciali) che presentano i seguenti beta levered:\n\nsociet\u00e0 1: 1,3\n\nsociet\u00e0 2: 1,5\n\nsociet\u00e0 3: 1,65\n\nsociet\u00e0 4: 1,1\n\nPer tutte le societ\u00e0 l\u2019aliquota fiscale (t) \u00e8 il 20% e debito e capitale netto sono uguali.\n\nDopo aver determinato il beta unlevered medio del paniere calcolate il beta levered di ABC Srl sulla\n\nbase del medesimo rapporto di indebitamento. Calcolate infine il WACC della ABC Srl tenendo\n\nconto che l\u2019aliquota fiscale resta invariata (20%), RF \u00e8 il 2%, il premio di rischio del mercato \u00e8 il\n\n6,5%, e il tasso di interesse sul debito (i) \u00e8 il 3%.",
+        "table_md": "",
+        "correct": "6,7%",
+        "wrongs": [
+            "7,6%",
+            "8,3%",
+            "8,7%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Utilizzando il metodo del WACC l\u2019impresa sceglier\u00e0 l\u2019indebitamento che minimizza il valore sulla\n\nbase della seguente relazione:",
+        "table_md": "",
+        "correct": "Rendimento atteso inferiore al costo del capitale medio ponderato",
+        "wrongs": [
+            "Rendimento atteso meno costo del capitale medio ponderato minimo",
+            "Rendimento atteso meno costo del capitale medio ponderato inferiore ad una certa soglia",
+            "Rendimento atteso superiore al costo del capitale medio ponderato"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il costo del debito della societ\u00e0 Gamma \u00e8 influenzato dal suo ICR che \u00e8 pari a 2. Gamma paga\n\n200.000 euro di oneri finanziari che corrispondono ad un tasso di interesse del 4%. Il suo EBIT sar\u00e0\n\npari a:",
+        "table_md": "",
+        "correct": "Euro 400.000",
+        "wrongs": [
+            "Euro 600.000",
+            "Euro 90.000",
+            "Euro 300.000"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Dopo aver calcolato il MOS in presenza di un prezzo azionario di 120 euro e un valore intrinseco per\n\nazione di 100 euro, identificare la risposta corretta.",
+        "table_md": "",
+        "correct": "Il MOS \u00e8 il -20% e significa che la societ\u00e0, rispetto al suo Vi, \u00e8 sopravvalutata dal mercato",
+        "wrongs": [
+            "Il MOS \u00e8 il 20% e significa che la societ\u00e0, rispetto al suo Vi, \u00e8 sottovalutata dal mercato",
+            "Il MOS \u00e8 20% e significa che la societ\u00e0 presenta un prezzo azionario scontato rispetto al suo valore intrinseco",
+            "Il MOS \u00e8 -20% e significa che la societ\u00e0 presenta un prezzo azionario sottovalutato rispetto al suo valore intrinseco"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Lo Stato Patrimoniale di un\u2019azienda dal punto di vista della Corporate Finance comprende:",
+        "table_md": "",
+        "correct": "Investimenti gi\u00e0 effettuati in capitale fisso e circolante e valore atteso degli investimenti futuri",
+        "wrongs": [
+            "Investimenti fissi, investimenti correnti, investimenti finanziari e investimenti immateriali",
+            "Investimenti in capitale proprio e di terzi",
+            "Nessuna delle risposte indicate"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". La ABC Srl ha l\u2019opportunit\u00e0 di investire in quattro progetti di investimento i cui flussi di cassa (CF0,\n\nCF1, CF2) sono sintetizzati nella seguente tabella:\n\nProgetto CF0 CF1 CF2\n\nProgetto 1 -15 10 9\n\nProgetto 2 -8 7 10\n\nProgetto 3 -12 11 12\n\nProgetto 4 -20 19 14\n\nCalcolate il valore attuale netto (VAN) di ciascun progetto, assumendo un tasso di attualizzazione\n\npari al 15% e riportate in ordine crescente i 4 progetti (dal punto di vista del VAN).",
+        "table_md": "",
+        "correct": "Nessuna delle risposte indicate.",
+        "wrongs": [
+            "Progetto 1, Progetto 3, Progetto 4, Progetto 2;",
+            "Progetto 1, Progetto 2, Progetto 4, Progetto 3;",
+            "Progetto 4, Progetto 3, Progetto 1, Progetto 2;"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Il valore dell\u2019impresa Alfa \u00e8 1.020 (euro/milioni). Con un flusso di cassa disponibile per gli azionisti\n\ndi 50 (euro/milioni) il CFO decide di non distribuire dividendi. Sapendo che esistono 100 milioni di\n\nazioni indicare il valore di un\u2019azione dell\u2019impresa Alfa dopo la decisione del CFO.",
+        "table_md": "",
+        "correct": "10,70 euro",
+        "wrongs": [
+            "10,50 euro",
+            "10,20 euro",
+            "9,70 euro"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "L\u2019EVA misura il surplus del valore creato da un progetto e rappresenta rispetto al capitale investito:",
+        "table_md": "",
+        "correct": "La differenza tra il costo del capitale e il rendimento calcolato riclassificando il reddito operativo contabile",
+        "wrongs": [
+            "La differenza tra il costo del capitale e il rendimento calcolato riclassificando l\u2019utile netto contabile",
+            "La differenza tra il costo del capitale di terzi e il rendimento calcolato riclassificando il reddito operativo contabile",
+            "Nessuna delle risposte indicate"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Il financial leverage model prevede che:",
+        "table_md": "",
+        "correct": "Il ROE diminuisce al crescere del capitale di terzi quando il ROI \u00e8 inferiore al costo del debito",
+        "wrongs": [
+            "Il ROE cresce al crescere del capitale di terzi quando il ROI \u00e8 inferiore al costo del debito",
+            "Il ROE diminuisce al crescere del capitale di terzi quando il ROI \u00e8 superiore al costo del debito",
+            "Il ROE cresce al diminuire del capitale di terzi quando il ROI \u00e8 superiore al costo del debito"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "L\u2019obiettivo finanziario del management delle aziende multinazionali \u00e8 quello di:",
+        "table_md": "",
+        "correct": "Massimizzare il valore per gli azionisti",
+        "wrongs": [
+            "Minimizzare i costi di agenzia",
+            "Incrementare il numero delle filiali estere",
+            "Incrementare le vendite e gli utili delle filiali estere"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Nel contratto di franchising:",
+        "table_md": "",
+        "correct": "Un\u2019impresa cede ad un\u2019altra operante in un paese estero il diritto di utilizzare, in una determinata area geografica, particolari asset a fronte del pagamento di un corrispettivo",
+        "wrongs": [
+            "Sono richiesti ingenti investimenti e non consente una rapida diffusione dei propri asset sui mercati esteri",
+            "Un\u2019impresa crea una collaborazione continuativa con un\u2019altra impresa, interessata ad entrare in un mercato estero, concedendo l\u2019utilizzazione della propria formula organizzativa e commerciale",
+            "Due imprese creano una nuova entit\u00e0 societaria finalizzata alla realizzazione di un progetto di investimento"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "L\u2019Interest Rate Parity:",
+        "table_md": "",
+        "correct": "\u00c8 una condizione di non arbitraggio sui mercati finanziari in base alla quale il rendimento atteso di un\u2019attivit\u00e0 finanziaria denominata in valuta nazionale deve essere uguale al rendimento di attivit\u00e0 finanziaria analoga denominata in valuta estera al netto del deprezzamento atteso della valuta nazionale nei confronti della valuta estera;",
+        "wrongs": [
+            "\u00c8 una condizione di arbitraggio sui mercati finanziari in base alla quale il rendimento atteso di un\u2019attivit\u00e0 finanziaria denominata in valuta nazionale deve essere uguale al rendimento di attivit\u00e0 finanziaria analoga denominata in valuta estera al netto dell\u2019apprezzamento atteso della valuta nazionale nei confronti della valuta estera;",
+            "Suggerisce che il tasso di cambio non rimarr\u00e0 costante ma si adeguer\u00e0 per mantenere la parit\u00e0 nei poteri di acquisto dei due paesi;",
+            "Nessuna delle risposte indicate \u00e8 corretta."
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il country risk premium misura:",
+        "table_md": "",
+        "correct": "Tutte le risposte indicate sono corrette",
+        "wrongs": [
+            "Il rischio politico di un paese",
+            "Il rischio finanziario di un paese",
+            "Il rischio economico di un paese"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Per verificare insieme al CFO se l\u2019attuale livello di indebitamento del gruppo Lanifeld Spa era\n\nquello che massimizzava il valore dell\u2019impresa o meno, l\u2019AD chiese di calcolare l\u2019APV utilizzando\n\ncome tasso di sconto il WACC che ammontava all\u20198%.\n\nA tal proposito il CFO sapeva che il FCFF era 88 milioni di euro e il tasso atteso di crescita (g) era\n\ndel 2%.\n\nI costi attesi di fallimento erano stimati in misura del 25% del firm value (1.500 milioni di euro),\n\nmentre la probabilit\u00e0 di fallimento era dell\u20191%. L\u2019aliquota fiscale della Lanifed Spa era del 30% e il\n\nsuo debito finanziario ammonta al 20% del firm value. Calcolate l\u2019APV.",
+        "table_md": "",
+        "correct": "1.582,75",
+        "wrongs": [
+            "1.496,00",
+            "1.698,75",
+            "1.500,00"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Per identificare (o meno) la presenza di un VCd utilizzando il triangolo finanziario occorre\n\nanalizzare:",
+        "table_md": "",
+        "correct": "Tutte le risposte indicate",
+        "wrongs": [
+            "La continuit\u00e0 dei margini economici dell\u2019impresa",
+            "Le spese in R&S",
+            "L\u2019indebitamento finanziario dell\u2019impresa"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La oil corporation \u00e8 un\u2019importante produttrice di olio combustibile, le cui azioni in circolazioni\n\npari a 9milioni, sono negoziate ad oggi al prezzo unitario di 120euro. La societ\u00e0 presenta un\n\nammontare di debito perpetuo di 320 milioni di euro ed un rendimento del 9%. Il rendimento\n\ndell\u2019attivit\u00e0 priva di rischio \u00e8 pari al 5%, mentre il premio per il rischio di mercato \u00e8 del 6%. Il\n\ncoefficiente di rischio sistematico (Beta) \u00e8 pari a 1,5.\n\nIpotizzando di applicare il metodo del CAPM, calcolate il costo del capitale azionario della societ\u00e0.",
+        "table_md": "",
+        "correct": "14%",
+        "wrongs": [
+            "10%",
+            "16%",
+            "12%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Il modello di corporate governance USA, dove le societ\u00e0 sono generalmente Public company\n\n(corporation) e i loro titoli sono scambiati nel mercato azionario, i punti di forza sono\n\nrappresentati dal management e da una pi\u00f9 ampia possibilit\u00e0 di raccolta del capitale. Esistono\n\ntuttavia dei punti di debolezza:",
+        "table_md": "",
+        "correct": "Il management pu\u00f2 prendere decisioni eccessivamente orientate al breve termine al fine di massimizzare il valore delle azioni e i costi di agenzia possono essere elevati",
+        "wrongs": [
+            "Il management \u00e8 controllato dagli azionisti con un sistema two-tired e il comitato di sorveglianza aumenta i costi di agenzia riducendo il valore",
+            "Il management \u00e8 remunerato con una parte variabile frequentemente rappresentata da stock option che non sono valutabili nel mercato azionario",
+            "Il management pu\u00f2 prendere decisioni eccessivamente orientate al lungo termine al fine di massimizzare il valore delle azioni e i costi di agenzia possono essere elevati"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "L\u2019AD della Lanifed, sulla base delle informazioni prodotte dal CFO, chiese di calcolare il costo\n\nmedio ponderato del capitale (WACC). La market cap era di 1.500 milioni di euro mentre il debito\n\nfinanziario ammontava a 200 milioni di euro. A tal proposito il rendimento delle attivit\u00e0 finanziarie\n\nprive di rischio (RF) assunto dal CFO fu 4% e il premio per il rischio di mercato 3,5%. Il livello di\n\nindebitamento al 31/12 identificava un Beta levered pari a 1,09 mentre la percentuale degli oneri\n\nfinanziari, variabile in relazione al default risk, veniva determinata sulla base di un rating a cui\n\ncorrispondeva uno spread dello 0,75%, mentre l\u2019aliquota fiscale era del 20%.",
+        "table_md": "",
+        "correct": "7,33%",
+        "wrongs": [
+            "8,17%",
+            "9,21%",
+            "7,99%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Secondo il metodo del costo del capitale (wacc), l\u2019indice di indebitamento che massimizza il\n\nvalore dell\u2019impresa \u00e8 quello che rende minimo il wacc",
+        "table_md": "",
+        "correct": "\u00c8 vero, a parit\u00e0 di rendimento il wacc minimo massimizza il valore dell\u2019impresa",
+        "wrongs": [
+            "Non \u00e8 vero perch\u00e9 il valore dell\u2019impresa non dipende dalla sua struttura finanziaria",
+            "Non \u00e8 vero perch\u00e9 ci\u00f2 che massimizza il valore \u00e8 il prezzo azionario",
+            "Non \u00e8 vero perch\u00e9 se all\u2019aumentare dell\u2019indice aumentano le vendite il valore cresce"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La politica di investimento prevede che un\u2019impresa debba investire",
+        "table_md": "",
+        "correct": "Progetti con un rendimento atteso superiore al costo medio ponderato del capitale",
+        "wrongs": [
+            "Progetti con un rendimento atteso inferiore al costo medio ponderato del capitale",
+            "Progetti con un costo medio ponderato del capitale minimo",
+            "Progetti con un costo medio ponderato del capitale superiore a una soglia minima"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Con i piani di stock option viene dato il diritto ai manager di acquistare, in futuro, le azioni\n\ndella societ\u00e0 ad un determinato prezzo di esercizio prestabilito. L\u2019opzione si esercita se:",
+        "table_md": "",
+        "correct": "Il prezzo delle azioni \u00e8 superiore al prezzo di esercizio",
+        "wrongs": [
+            "Il prezzo delle azioni \u00e8 uguale al prezzo di esercizio",
+            "Nessuna delle risposte indicate",
+            "Il prezzo delle azioni \u00e8 inferiore al prezzo di esercizio"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". L\u2019interest rate parity (IRP) \u00e8 la condizione di equilibrio che si verifica quando sul mercato:",
+        "table_md": "",
+        "correct": "Il tasso di cambio forward differisce dal tasso di cambio spot di importo sufficiente a compensare il differenziale tra i tassi di interesse del paese domestico e del paese estero cui si riferiscono le due valute",
+        "wrongs": [
+            "Il tasso di cambio forward differisce dal tasso di cambio spot di importo sufficiente a compensare il differenziale tra i tassi di produttivit\u00e0 marginale del paese domestico e del paese estero cui si riferiscono le due valute",
+            "Il tasso di cambio forward differisce dal tasso di cambio spot di importo sufficiente a compensare il differenziale tra i tassi di esportazioni del paese domestico e del paese estero cui si riferiscono le due valute",
+            "Il tasso di cambio forward differisce dal tasso di cambio spot di importo sufficiente a compensare il differenziale tra i tassi di inflazione del paese domestico e del paese estero cui si riferiscono le due valute"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La societ\u00e0 ABC Spa presenta nel rendiconto finanziario, su un arco di 10 anni, un utilizzo\n\nsistematico dell\u2019excess cash per effettuare buyback e \u2026 azioni",
+        "table_md": "",
+        "correct": "L\u2019operazione aumenta l\u2019EPS e diffonde valore, la societ\u00e0 gode di VCd",
+        "wrongs": [
+            "I buyback realizzati con il leverage (excess cash) indicano che la societ\u00e0 gode di un VCd e riacquista azioni per non eroderlo",
+            "L\u2019operazione riduce le azioni in circolazione e la restituzione di liquidit\u00e0 indica che la societ\u00e0 sta erodendo il suo VCd",
+            "L\u2019operazione diminuisce l\u2019EPS e distrugge valore, la societ\u00e0 non gode di VCd"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "L\u2019APV tendenzialmente sovrastima il leverage che massimizza il valore dell\u2019impresa perch\u00e9:",
+        "table_md": "",
+        "correct": "Al crescere del leverage cresce Ke e si modifica il wacc e quindi di conseguenza il valore dell\u2019azienda",
+        "wrongs": [
+            "Al crescere del leverage cresce Kd e si modifica il wacc e quindi il valore dell\u2019azienda resta non modificato",
+            "Al crescere del leverage decresce Ke e si modifica il wacc e quindi il valore dell\u2019azienda non si massimizza ma decresce al crescere del wacc",
+            "Al crescere del leverage cresce Ke e non si modifica il wacc e quindi il valore dell\u2019azienda non si massimizza ma decresce al crescere del costo"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il pentagono finanziario comprende le aree della Corporate Finance che sono:",
+        "table_md": "",
+        "correct": "La corporate governance, la struttura finanziaria e la valutazione d\u2019azienda",
+        "wrongs": [
+            "L\u2019impresa, la corporate governance e la valutazione d\u2019azienda",
+            "La corporate governance, la struttura finanziaria e l\u2019area investimenti",
+            "L\u2019impresa, la struttura finanziaria e l\u2019area investimenti"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "In presenza di un VCd il Vi corrisponde non solo ai profitti che la societ\u00e0 genera, scontati\n\nperpetuamente al costo medio ponderato del capitale (wacc), ma tale valore, ricalcolato sulla base\n\ndegli utili non reinvestiti e scontati al wacc, \u00e8 aumentato del tasso di rendimento (ROIC) che si\n\nottiene anche sugli utili reinvestiti scontati al wacc e misurati utilizzando il tasso ritenzione degli\n\nstessi rispetto au dividendi distribuiti (RR). Calcolate il Vi supponendo che esista un VCd utilizzando\n\ni seguenti valori: profitto=52 euro/milioni, wacc=8%, ROIC=20% e RR=0,7\n\nLa relazione tra Vi e VCd prevede che: Vi = (3/wacc)*(1-RR+RR*ROIC/wacc).",
+        "table_md": "",
+        "correct": "1.332,5 euro/milioni",
+        "wrongs": [
+            "5.687,5 euro/milioni",
+            "891,5 euro/milioni",
+            "73.531,25 euro/milioni"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "In qualsiasi settore operi, la societ\u00e0 che presenta il rapporto minore tra oneri finanziari sul\n\ncapitale di terzi e reddito operativo (rapporto inversamente determinato dall\u2019indice denominato\n\nICR, interest coverage ratio) \u00e8 quella che presenta una maggiore probabilit\u00e0 di avere un VCd",
+        "table_md": "",
+        "correct": "\u00c8 vero, le societ\u00e0 con un VCd hanno poco debito e un reddito operativo costante",
+        "wrongs": [
+            "Non \u00e8 vero, il VCd dipende solo dal reddito operativo",
+            "\u00c8 vero, le societ\u00e0 con un VCd hanno pi\u00f9 facilit\u00e0 ad aumentare il leverage",
+            "Non \u00e8 vero, il VCd non ha relazione con l\u2019ICR ma solo con il leverage"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La relazione tra Vi e VC prevede che:",
+        "table_md": "",
+        "correct": "In assenza di vantaggio competitivo il valore intrinseco \u00e8 uguale al book value",
+        "wrongs": [
+            "Nessuna delle voci citate",
+            "In assenza di vantaggio competitivo il valore intrinseco \u00e8 inferiore al book value",
+            "In presenza di vantaggio competitivo il valore intrinseco \u00e8 uguale al book value"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Un\u2019impresa con un margine di struttura negativo e un margine di tesoreria positivo presenta:",
+        "table_md": "",
+        "correct": "Passivit\u00e0 correnti inferiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto inferiore alle immobilizzazioni nette",
+        "wrongs": [
+            "Passivit\u00e0 correnti inferiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette",
+            "Passivit\u00e0 correnti superiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto inferiore alle immobilizzazioni nette",
+            "Passivit\u00e0 correnti superiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Sommando l\u2019attivo corrente (AC) con l\u2019attivo immobilizzato o fisso (ai) si ottiene il totale\n\ndell\u2019attivo (TA) che rappresenta la somma delle attivit\u00e0 dello stato patrimoniale dell\u2019impresa. Il TA\n\n\u00e8 importante per determinare il grado di efficienza con cui la societ\u00e0 utilizza le sue attivit\u00e0 e\n\nquindi il capitale investito. Per misurarlo si utilizza il ROTA che \u00e8 il rapporto tra Utile Netto e TA, in\n\nche modo il livello del ROTA \u00e8 legato al VC?",
+        "table_md": "",
+        "correct": "Un elevato livello del ROTA indica un rischio di durabilit\u00e0 del VC",
+        "wrongs": [
+            "Un elevato livello del ROTA indica un buon utile netto e presenza di VC",
+            "Un basso livello del ROTA indica un rischio di durabilit\u00e0 del VC",
+            "Un basso livello del ROTA indica un utile netto insufficiente a garantire presenza di VC"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La letteratura nell\u2019individuare i modelli di governance contrappone un modello anglosassone,\n\ntipico degli Stati Uniti ove prevalgono il mercato finanziario e le public company, ad un modello\n\nrenano, proprio della Germania, ma diffuso, con alcune differenze, anche in Giappone, dove la\n\npropriet\u00e0 \u00e8 diffusa e i meccanismi di corporate governance consentono uno stretto controllo sul\n\nmanagement:",
+        "table_md": "",
+        "correct": "Non \u00e8 vero, nel modello renano e anche in Giappone la propriet\u00e0 \u00e8 concentrata",
+        "wrongs": [
+            "E\u2019 vero, questa \u00e8 la differenza tra modello anglosassone e renano",
+            "Nessuna delle voci citate",
+            "Non \u00e8 vero, nel modello anglosassone sono prevalenti le private company"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La societ\u00e0 M.A. Srl non \u00e8 quotata. Le societ\u00e0 comparables appartenenti al settore di riferimento\n\n(distribuzione al dettaglio di libri) presentano i seguenti beta levered:\n\nSociet\u00e0 1: 1,3\n\nSociet\u00e0 2: 1,5\n\nSociet\u00e0 3: 1,65\n\nSociet\u00e0 4: 1,1\n\nPer tutte le societ\u00e0 l\u2019aliquota fiscale (t) \u00e8 pari al 20% e l\u2019indice di indebitamento \u00e8 pari a 1.\n\nDopo aver determinato il beta unlevered medio del paniere calcolare il beta levered di M.A. Srl\n\nsulla base del medesimo rapporto di indebitamento (pari a 1) senza considerare il beta del debito.\n\nUtilizzate a questo punto il beta levered di M.A. Srl per calcolare il suo Wacc tenendo conto che\n\nl\u2019aliquota fiscale resta invariata (20%), RF \u00e8 il 2%, il premio di rischio del mercato (Rm-Rf) \u00e8 il 6,5%,\n\ne il tasso di interesse sul debito (i) \u00e8 il 3%. Restando invariato il rapporto di indebitamento (D/E =\n\n1) i pesi E/(D+E) e D/(D+E) sono uguali e pari a 0,5:",
+        "table_md": "",
+        "correct": "6,7%",
+        "wrongs": [
+            "8,7%",
+            "8,3%",
+            "7,6%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il costo del debito della societ\u00e0 Gamma \u00e8 influenzato dal suo ICR che \u00e8 pari a 2. Gamma paga\n\n150.000 euro di oneri finanziari che corrispondono ad un tasso di interesse del 4%, il suo EBIT sar\u00e0\n\npari a:",
+        "table_md": "",
+        "correct": "Euro 300.000",
+        "wrongs": [
+            "Euro 75.000",
+            "Euro 600.000",
+            "Euro 450.000"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Si ipotizzi la presenza di un VCd. Dopo aver calcolato il Vi con il metodo abbreviato, sapendo che il\n\nprofitto \u00e8 100 milioni di euro, il wacc il 10%, il ROIC il 20% e il tasso di ritenzione degli utili (RR) \u00e8\n\n0,5, indicare il prezzo dell\u2019azione sapendo che ci sono 1 miliardo di azioni e il Vi determina un\n\nMOS del 20%:",
+        "table_md": "",
+        "correct": "1,2 euro",
+        "wrongs": [
+            "1,6 euro",
+            "1,5 euro",
+            "1,3 euro"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La Andr\u00e0tuttobene Corporation \u00e8 un importante produttrice di mascherine, le cui azioni in circolazione (pari a 10 milioni) sono\n\nnegoziate ad oggi al prezzo unitario di 100 Euro.\n\nLa Societ\u00e0 presenta un ammontare di debito perpetuo pari a 300 milioni di Euro ed un costo del 4% al lordo delle imposte.\n\nSapendo che il rendimento free risk \u00e8 pari al 1%, mentre il premio per il rischio di mercato \u00e8 del 6% e il coefficiente di rischio\n\nsistematico (Beta) \u00e8 pari a 1,4. Applicate il metodo del Capital Asset Pricing Model (CAPM) e calcolate il rendimento atteso.\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "9,40%",
+        "wrongs": [
+            "8,20%",
+            "7,30%",
+            "10,7%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Uno degli indicatori usati per verificare se un'impresa detiene un VCd \u00e8 l'utile per azione (EPS, earning per share). Con\n\nriferimento al trend dell'EPS indicare quale delle seguenti affermazioni \u00e8 vera:\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "Tutte le risposte sono corrette",
+        "wrongs": [
+            "Un trend in continuo rialzo dell'EPS rappresenta un segnale di VCd",
+            "Un trend al ribasso dell'EPS rappresenta un segnale di non presenza di VCd",
+            "Un trend, intercalato da perdite, dell'EPS significa che il settore affronta un periodo di contrazione e non segnala la presenza di VCd"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Secondo il metodo del costo del capitale (wacc) l'indice di indebitamento che massimizza il valore dell'impresa, \u00e8 quello che\n\nrende minimo il wacc.\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "\u00c9 vero, a parit\u00e0 di rendimento il wacc minimo massimizza il valore dell'impresa",
+        "wrongs": [
+            "Non \u00e8 vero perch\u00e9 il valore dell'impresa non dipende dalla sua struttura finanziaria",
+            "E vero perch\u00e9 se all'aumentare dell'indice aumentano le vendite il valore cresce",
+            "Non \u00e8 vero perch\u00e9 ci\u00f2 che massimizza il valore dell'impresa \u00e8 il prezzo azionario"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La societ\u00e0 DAD S.p.A. gode di un VCd e questo \u00e8 il suo conto economico:\n\nRicavi (Net Sales)\n\ndata Costo del Venduto (Cost of Sales)\n\nPunteggio max.: 1,50 Profitto Lordo (Gross Margin)\n\nContrassegna Spese della Gestione Operativa (Operating Expenses):\n\ndomanda Spese Generali Amministrative (Selling General & Administrative)\n\n28.857 100%\n\n(10.406) 36,06%\n\n18.451 63,94%\n\n(10.200) 35,35%\n\nRicerca e Sviluppo (Research and Development) (0) 0%\n\nAmmortamenti (Depreciation) * (1.107) 3,84%\n\nUtile o Perdita di Gestione (Operating Income) 7.144 24,76%\n\nInteressi Passivi (Interest Payable) (456) 6.38%\n\nRisultati da alienazioni di attivit\u00e0 e altri eventi non ricorrenti (Other Income/Expense Net) 1.275 4.42%\n\nAltri oneri (50) 0.17%\n\nUtile Ante Imposte (Income Before Provision For Income Taxes) 7.913 27,42%\n\nImposte sul Reddito (Provision For Income Taxes) (2.769) 34,99%\n\nUtile Netto (Net Income) 5.144 17,83%\n\nGli indicatori sono:\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "Il margine elevato (63,94%), i bassi interessi passivi (6,38%) e l'R&D (0%)",
+        "wrongs": [
+            "Il margine elevato (63,94%), i bassi ammortamenti (3,84%), le imposte (34,10%) e le spese (35,35%)",
+            "IImargine elevato (63,94%), i bassi ammortamenti (3,84%) e le imposte (34,10%)",
+            "Il margine elevato (63,94%), i bassi interessi passivi (6,38%) e le imposte (34%)"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Un'impresa che, rispetto ai competitors, mostra costantemente una percentuale inferiore di crediti netti rispetto al fatturato\n\nlordo, gode di un VCd:\n\nScegli un'alternativa:\n\nO",
+        "table_md": "",
+        "correct": "\u00c8 vero, una percentuale inferiore di crediti netti indica presenza di un VCd",
+        "wrongs": [
+            "Nessuna delle risposte precedenti",
+            "Non \u00e8 vero, per godere di un VCd l'impresa non deve avere crediti netti",
+            "Non \u00e8 vero, il fatturato \u00e8 indipendente rispetto ai crediti netti"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Applicando il metodo dell'Adjusted Present Value (APV) il CFO della EURO2020 S.p.A. vuole stimare il valore dell'impresa\n\nlevered. II CFO conosce il FCFF, che ammonta a 100 milioni di euro e il tasso atteso di crescita (g = growth) \u00e8 dell\u2019 1%. I costi attesi\n\ndi fallimento sono stimati in misura del 25% del firm value (2.000 milioni di euro), mentre la probabilit\u00e0 di fallimento \u00e8 dell' 1%.\n\nL'aliquota fiscale \u00e8 del 20%. Il debito finanziario ammonta al 50% del firm value.\n\nIdentificate la risposta corretta utilizzando come tasso di sconto un costo del capitale pari al 11%.\n\nScegli un'alternativa:\n\nO a. 1.210",
+        "table_md": "",
+        "correct": "1.205",
+        "wrongs": [
+            "1.010",
+            "1.015"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La societ\u00e0 HeroesCo Plc \u00e8 leader di settore e detiene un VCd. Il suo profitto \u00e8 di 100 milioni di Euro, mentre il rendimento del\n\ncapitale investito (ROIC) \u00e8 il doppio del costo medio ponderato del capitale (WACC) che a sua volta \u00e8 la met\u00e0 del MOS.\n\nLa HeroesCo Plc distribuisce dividendi in percentuale del profitto pari al 20%. Se le azioni complessivamente sono 1 miliardo e il\n\nMOS \u00e8 pari al 20% a quanto ammonta il prezzo dell'azione?\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "1,44 euro",
+        "wrongs": [
+            "1,40 euro",
+            "1,54 euro",
+            "1,50 euro"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "II CEO della Blue Shark CO, sulla base delle informazioni prodotte dal CFO, chiese di calcolare il costo medio ponderato del\n\ncapitale (wacc).\n\nIl prezzo azionario \u00e8 di 1 Euro e ci sono 1,5 miliardi di azioni, mentre il debito finanziario ammonta a 500 milioni di euro.\n\nII CFO assume un rendimento delle attivit\u00e0 finanziarie prive di rischio del 2% mentre il rendimento atteso del mercato \u00e8 pari al\n\n9%. Il livello di indebitamento identifica un Beta levered pari a 1,2 mentre la percentuale degli oneri finanziari, variabile in\n\nrelazione al default risk, veniva determinata sulla base di un rating AAA, a cui corrispondeva uno spread dello 0,75%, mentre\n\nl'aliquota fiscale era del 20%.\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "8,35%",
+        "wrongs": [
+            "7,99%",
+            "8,17%",
+            "9,21%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Ilvalore dell'impresa indebitata \u00e8 pari al valore dell'impresa priva di debito pi\u00f9 il valore attuale dei benefici fiscali del debito e\n\nmeno il valore attuale dei costi di fallimento attesi. La formula comprende, tra le altre, le seguenti componenti:\n\ndata\n\nPunteggio max.: 1,50\n\nContrassegna\n\ndomanda\n\nScegli un'alternativa:\n\nO a. Nessuna delle risposte indicate",
+        "table_md": "",
+        "correct": "Tasso di crescita atteso, costo del capitale netto senza debito, debito e probabilit\u00e0 di fallimento",
+        "wrongs": [
+            "Tasso di crescita atteso, costo del debito, debito e probabilit\u00e0 di fallimento",
+            "Tasso di crescita atteso, costo del debito, debito e bankruptcy cost"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "data\n\nIn qualsiasi settore operi, la societ\u00e0 che presenta il rapporto minore tra oneri finanziari sul capitale di terzi e reddito operativo\n\n(rapporto inversamente determinato dall'indice denominato ICR, interest coverage ratio) \u00e8 quella che presenta una maggiore\n\nprobabilit\u00e0 di avere un VCd:\n\nPunteggio max.: 1,50\n\nContrassegna\n\ndomanda Scegli un'alternativa:\n\n\u039f a. Non \u00e8 vero: il VCd dipende solo dal reddito operativo",
+        "table_md": "",
+        "correct": "\u00c8 vero: le societ\u00e0 con un VCd hanno poco debito e un reddito operativo costante",
+        "wrongs": [
+            "Non \u00e8 vero: ilVCd non ha relazione con I'ICR ma solo con il leverage",
+            "\u00c8 vero: le societ\u00e0 con un VCd hanno pi\u00f9 facilit\u00e0 ad aumentare il leverage"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "I principali problemi della separazione tra propriet\u00e0 (azionisti) e controllo (management) dell'impresa sono descritti dalla teoria\n\ndell'agenzia e risiedono nell'asimmetria informativa tra principal e agent. Per risolverli i meccanismi di corporate governance\n\nsono:\n\nPunteggio max.: 1,50\n\nContrassegna\n\ndomanda Scegli un'alternativa:",
+        "table_md": "",
+        "correct": "IIConsiglio di Amministrazione (Board od Directors) e l'Assemblea degli Azionisti (Shareholders Meeting)",
+        "wrongs": [
+            "IIManagement e il Consiglio di Amministrazione (Board od Directors)",
+            "I costi di agenzia e i benefici fiscali",
+            "Le Stock Option e il Consiglio di Amministrazione (Board od Directors)"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La MB ha l'opportunit\u00e0 di investire in quattro progetti di investimento i cui flussi di cassa (CFO, CF1, CF2) sono sintetizzati nella\n\nseguente tabella:\n\nPROGETTO CFO CF1 CF2\n\nPunteggio max.: 1,50\n\nProgetto 1 -20 10 15\n\nContrassegna Progetto 2 -10 14 30\n\ndomanda\n\nProgetto 3 -15 22 36\n\nIndicare, seguendo il metodo del valore attuale netto (VAN), quale progetto scegliereste, assumendo un tasso di attualizzazione\n\npari al 10%:\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "Progetto 3",
+        "wrongs": [
+            "Progetto 2 O b. Nessuna delle risposte indicate \u039f",
+            "Progetto 1"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Secondo la pecking order theory (Teoria dell'ordine di scelta) i manager finanziari sono soliti seguire una gerarchia nella scelta\n\ndelle varie fonti di finanziamento: .44\n\nPunteggio max.: 1,50\n\nScegli un'alternativa: Contrassegna\n\ndomanda",
+        "table_md": "",
+        "correct": "Gli utili non distribuiti rappresentano la prima scelta, seguiti dal debito e dall'emissione di nuove azioni \u039f b. Gli utili non distribuiti rappresentano la prima scelta, seguiti dall'emissione di nuove azioni e dal debito .15 \u039f c. Il debito rappresenta la prima scelta, seguito dall'emissione di nuove azioni e dagli utili non distribuiti",
+        "wrongs": [
+            "Il debito rappresenta la prima scelta, seguito dagli utili non distribuiti e dall'emissione di nuove azioni"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La relazione che intercorre tra i risultati realizzati e la retribuzione data al management, nell'ambito di una politica orientata\n\nall'incentivazione, rappresenta:\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "La forma funzionale della retribuzione del management",
+        "wrongs": [
+            "Tutte le risposte sono corrette",
+            "Il pacchetto retributivo totale che spetta al management per il lavoro",
+            "Il livello di costo atteso per la remunerazione del management"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "I costi di agenzia nelle imprese multinazionali sono funzione:\n\ndata\n\nPunteggio max.: 1,50\n\nContrassegna\n\ndomanda\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "Tutte le risposte indicate \u039f c. Del numero di paesi in cui l'impresa opera",
+        "wrongs": [
+            "Della dimensione dell'impresa multinazionale",
+            "Della diversit\u00e0 culturale dei vari manager provenienti da paesi diversi"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Nelle Joint ventures:\n\nScegli un'alternativa:\n\nO\n\nO",
+        "table_md": "",
+        "correct": "Due imprese creano una nuova entit\u00e0 societaria finalizzata alla realizzazione di un progetto di investimento",
+        "wrongs": [
+            "un'impresa cede ad un'altra operante in un paese estero il diritto di utilizzare, in una determinata area geografica, particolari asset a fronte del pagamento di un corrispettivo",
+            "sono richiesti ingenti investimenti e non consente una rapida diffusione dei propri asset sui mercati esteri",
+            "un'impresa crea una collaborazione continuativa con un'altra impresa, interessata ad entrare in un mercato estero, concedendo l'utilizzazione della propria formula organizzativa e commerciale."
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il covered interest arbitrage:\n\nScegli un'alternativa:\n\ndomanda",
+        "table_md": "",
+        "correct": "\u00c8 lo sfruttamento di un'eventuale differenza tra i tassi di interesse tra due paesi mentre si copre il rischio di cambio con un contratto forward",
+        "wrongs": [
+            "Afferma che il tasso di cambio tra le valute di due paesi dovrebbe essere pari al rapporto tra i livelli dei prezzi dei due paesi O b. Nessuna delle risposte indicate O O",
+            "\u00c8 un indicatore del grado di multinazionalit\u00e0 dell'impresa"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Una societ\u00e0 Italiana ha intenzione di investire in Cina. Il progetto di investimento presenta un rendimento atteso del 12%. II\n\npremio per il rischio di mercato si attesta all'8% mentre il rendimento del mercato \u00e8 pari al 10%. Tuttavia per tenere conto del\n\nrischio paese il CFO stima un country risk premium pari al 1,5%. Sulla base dei dati riportati determinare il Beta del progetto di\n\ninvestimento estero.\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "1.06",
+        "wrongs": [
+            "Non \u00e8 possibile calcolarlo con i dati presenti nel testo",
+            "0.85",
+            "1.25"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Quale, fra i seguenti, \u00e8 un indicatore del grado di multinazionalit\u00e0 di un'impresa:\n\nScegli un'alternativa:",
+        "table_md": "",
+        "correct": "Tutte le risposte indicate",
+        "wrongs": [
+            "la percentuale (%) di investimenti all'estero rispetto al totale degli investimenti;",
+            "il numero e le dimensioni delle filiali estere possedute o controllate;",
+            "il numero dei paesi nei quali essa opera con attivit\u00e0 produttive;"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il Pentagono Finanziario comprende le aree della Corporate\n\nFinance che sono:",
+        "table_md": "",
+        "correct": "La Corporate Governance, la Struttura Finanziaria e la Valutazione d\u2019azienda",
+        "wrongs": [
+            "L\u2019Impresa, la Corporate Governance e La Valutazione d\u2019azienda",
+            "La Corporate Governance, la Struttura Finanziaria e l\u2019Area Investimenti",
+            "L\u2019impresa, la Struttura finanziaria e l\u2019Area Investimenti"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La politica di investimento prevede che un\u2019impresa debba\n\ninvestire:",
+        "table_md": "",
+        "correct": "Progetti con un rendimento atteso superiore al costo medio ponderato del capitale",
+        "wrongs": [
+            "Progetti con un rendimento atteso inferiore al costo medio ponderato del capitale",
+            "Progetti con un costo medio ponderato del capitale minimo",
+            "Progetti con un costo medio ponderato del capitale superiore a una soglia minima"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La Gamma Corporation \u00e8 un importante produttrice di viti, le cui\n\nazioni in circolazione pari a 10 milioni sono negoziate ad oggi al\n\nprezzo unitario di 82 Euro. La Societ\u00e0 presenta un ammontare di\n\ndebito finanziario pari a 280 milioni di Euro, il cui costo \u00e8 pari al 4%,\n\ne debiti commerciali pari a 180 milioni di Euro. Il rendimento\n\ndell\u2019attivit\u00e0 priva di rischio \u00e8 pari al 2,5%, mentre il rendimento di\n\nmercato \u00e8 del 8%. Il coefficiente di rischio sistematico (Beta) \u00e8 pari a\n\n1,1. Calcolate il costo dell\u2019equity della Gamma Corporation.",
+        "table_md": "",
+        "correct": "Circa l\u20198,55%",
+        "wrongs": [
+            "Circa il 4%",
+            "Circa 7,40 %",
+            "Circa l\u201911,30%"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Sommando l\u2019attivo corrente (AC) con l\u2019attivo immobilizzato o fisso (ai) si\n\nottiene il totale dell\u2019attivo (TA) che rappresenta la somma delle attivit\u00e0\n\ndello stato patrimoniale dell\u2019impresa. Il TA \u00e8 importante per determinare il\n\ngrado di efficienza con cui la societ\u00e0 utilizza le sue attivit\u00e0 e quindi il\n\ncapitale investito. Per misurarlo si utilizza il ROTA che \u00e8 il rapporto tra Utile\n\nNetto e TA. In che modo il livello del ROTA \u00e8 legato al VC?",
+        "table_md": "",
+        "correct": "Un elevato livello del ROTA indica un rischio di durabilit\u00e0 del VC",
+        "wrongs": [
+            "Un basso livello del ROTA indica un rischio di durabilit\u00e0 del VC",
+            "Un elevato livello del ROTA indica un buon utile netto e presenza di VC",
+            "Un basso livello del ROTA indica un utile netto insufficiente a garantire presenza di VC"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Il gruppo FB1 Investment vuole stimare il valore dell\u2019impresa utilizzando\n\nil suo Adjusted Present Value (APV). Il CFO conosce il FCFF, che ammonta a\n\n70 milioni di euro e il tasso atteso di crescita (g = growth) \u00e8 dell\u20192%. I costi\n\nattesi di fallimento sono stimati in misura del 30% del firm value (1.500\n\nmilioni di euro), mentre la probabilit\u00e0 di fallimento \u00e8 dell\u20192,5%. L\u2019aliquota\n\nfiscale \u00e8 del 25%. Il debito finanziario ammonta al 30% del firm value.\n\nIdentificate la risposta corretta utilizzando come tasso di sconto un costo\n\ndel capitale pari al 8%.",
+        "table_md": "",
+        "correct": "1291,25",
+        "wrongs": [
+            "689,55",
+            "976,25",
+            "1500"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La relazione tra Valore Intrinseco (VI) e Vantaggio Competitivo\n\ndurevole (VC) prevede che:",
+        "table_md": "",
+        "correct": "In assenza di vantaggio competitivo il valore intrinseco \u00e8 uguale al book value",
+        "wrongs": [
+            "In assenza di vantaggio competitivo il valore intrinseco \u00e8 inferiore al book value",
+            "In presenza di vantaggio competitivo il valore intrinseco \u00e8 uguale al book value",
+            "Nessuna delle precedenti risposte"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Calcolate il MOS in presenza di un prezzo azionario di 120 euro e\n\nun valore intrinseco per azione di 100 euro e identificare la risposta\n\ncorretta.",
+        "table_md": "",
+        "correct": "Il MOS \u00e8 il -20%, e significa che la societ\u00e0, rispetto al suo Vi, \u00e8 sopravvalutata dal mercato",
+        "wrongs": [
+            "Il MOS \u00e8 il 20% e significa che la societ\u00e0, rispetto al suo Vi, \u00e8 sottovalutata dal mercato",
+            "Il MOS \u00e8 20% e significa che la societ\u00e0 presenta un prezzo azionario scontato rispetto al suo valore intrinseco",
+            "Il MOS \u00e8 -20% e significa che la societ\u00e0 presenta un prezzo azionario sottovalutato rispetto al suo valore intrinseco"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Si ipotizzi la presenza di un VCd. Dopo aver calcolato il Vi con il\n\nmetodo abbreviato, sapendo che il profitto (\u03c0) \u00e8 200 milioni di Euro,\n\nil wacc il 10%, il ROIC il 15% e il tasso di ritenzione degli utili (RR) \u00e8\n\n0,8, indicare il prezzo dell\u2019azione sapendo che ci sono 1 miliardo di\n\nazioni e il Vi determina un MOS del 20%.",
+        "table_md": "",
+        "correct": "2,24 Euro",
+        "wrongs": [
+            "3,14 Euro",
+            "1,70 Euro",
+            "2,80 Euro"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "L\u2019A.P.V. tendenzialmente sovrastima il leverage che massimizza il\n\nvalore dell\u2019impresa perch\u00e9:",
+        "table_md": "",
+        "correct": "Nessuna delle risposte indicate",
+        "wrongs": [
+            "Al crescere del leverage decresce Kd e quindi il valore dell\u2019azienda non si massimizza ma decresce al crescere del costo.",
+            "Al crescere del leverage decresce Ke e quindi il valore dell\u2019azienda non si massimizza ma decresce",
+            "Al crescere del leverage cresce Kd e di conseguenza il valore dell\u2019azienda resta non modificato"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Lo Stato Patrimoniale di un\u2019azienda dal punto di vista della\n\nCorporate Finance comprende:",
+        "table_md": "",
+        "correct": "Investimenti gi\u00e0 effettuati in capitale fisso e circolante e valore atteso degli Investimenti futuri",
+        "wrongs": [
+            "Investimenti fissi, Investimenti correnti, Investimenti finanziari e Investimenti immateriali",
+            "Investimenti in capitale proprio e di terzi",
+            "Nessuna delle voci citate"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Quale delle seguenti non \u00e8 una ipotesi relativa alla teoria\n\nsull\u2019irrilevanza della politica dei dividendi di Modigliani e Miller:",
+        "table_md": "",
+        "correct": "Esistono costi di transazione delle azioni per gli investitori",
+        "wrongs": [
+            "Non esistono vantaggi/svantaggi fiscali legati ai dividendi",
+            "Non esistono costi di emissione delle azioni per le imprese",
+            "Il tasso di interesse sul mercato \u00e8 unico"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Il dividend payout ratio \u00e8 dato da:",
+        "table_md": "",
+        "correct": "Dividendo per azione/ utile per azione",
+        "wrongs": [
+            "Dividendo per azione/ prezzo per azione",
+            "Dividendo per azione/ valore intrinseco per azione",
+            "Dividendo per azione/ MOS"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Un\u2019impresa con un margine di struttura positivo e un margine di\n\ntesoreria positivo presenta:",
+        "table_md": "",
+        "correct": "Passivit\u00e0 correnti inferiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette",
+        "wrongs": [
+            "Passivit\u00e0 correnti superiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette",
+            "Passivit\u00e0 correnti superiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto inferiore alle immobilizzazioni nette",
+            "Passivit\u00e0 correnti inferiori alla somma delle liquidit\u00e0 differite e immediate e un capitale netto superiore alle immobilizzazioni nette"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Quali tra i seguenti non \u00e8 un elemento comune nei sistemi di\n\ngovernance dei paesi emergenti?",
+        "table_md": "",
+        "correct": "Alto livello di trasparenza",
+        "wrongs": [
+            "Struttura proprietaria ed organizzativa concentrata in capo alle famiglie o allo stato",
+            "Opacit\u00e0 finanziaria",
+            "Limitate informazioni sulle imprese"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "Quale, fra i seguenti, non \u00e8 un indicatore del grado di\n\nmultinazionalit\u00e0 di un'impresa:",
+        "table_md": "",
+        "correct": "La composizione quali-quantitativa degli organi di governo aziendale",
+        "wrongs": [
+            "Il numero dei paesi nei quali essa opera con attivit\u00e0 produttive",
+            "Il numero e le dimensioni delle filiali estere possedute o controllate",
+            "La percentuale (%) di investimenti all'estero rispetto al totale degli investimenti"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Nel contratto licensing:",
+        "table_md": "",
+        "correct": "Un\u2019impresa crea una collaborazione continuativa con un\u2019altra impresa, interessata ad entrare in un mercato estero, concedendo l\u2019utilizzazione della propria formula organizzativa e commerciale",
+        "wrongs": [
+            "Un\u2019impresa cede ad un\u2019altra operante in un paese estero il diritto di utilizzare, in una determinata area geografica, particolari asset a fronte del pagamento di un corrispettivo",
+            "Sono richiesti ingenti investimenti e non consente una rapida diffusione dei propri asset sui mercati esteri",
+            "Due imprese creano una nuova entit\u00e0 societaria finalizzata alla realizzazione di un progetto di investimento"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": "La Purchasing Power parity (PPP) afferma che il tasso di cambio\n\ntra le valute di due paesi dovrebbe essere pari a:",
+        "table_md": "",
+        "correct": "Il rapporto tra i livelli dei prezzi dei due paesi",
+        "wrongs": [
+            "Il prodotto tra i livelli dei prezzi dei due paesi",
+            "Il prodotto tra il tasso nominale e l\u2019inflazione attesa dei due paesi",
+            "Il rapporto tra il tasso nominale e l\u2019inflazione attesa dei due paesi"
+        ]
+    },
+    {
+        "materia": "POLITICHE",
+        "question": ". Secondo l\u2019Interest Rate Parity, in equilibrio:",
+        "table_md": "",
+        "correct": "Il tasso forward differisce dal tasso spot per un importo sufficiente a compensare il differenziale tra i tassi di interesse di due valute",
+        "wrongs": [
+            "Il tasso forward differisce dal tasso spot per un importo che riflette i rischi di mercato dei due paesi",
+            "Il tasso forward e il tasso spot variano in funzione del tasso di crescita del PIL",
+            "Nessuna delle risposte indicate"
+        ]
+    }
+]

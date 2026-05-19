@@ -2,21 +2,20 @@ import streamlit as st
 import json
 import random
 import os
+import re
 
 # --- CONFIGURAZIONE ---
 st.set_page_config(page_title="Master Quiz", page_icon="🎓", layout="wide")
 DB_FILE = "quiz_db.json"
 
-# --- 1. GESTIONE DATABASE E TABELLE ---
+# --- 1. GESTIONE DATABASE, TABELLE E PARSER MAGICO ---
 def load_data():
     if os.path.exists(DB_FILE):
         with open(DB_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
             for q in data:
-                if "materia" not in q:
-                    q["materia"] = "Generale"
-                if "table_md" not in q:
-                    q["table_md"] = ""
+                if "materia" not in q: q["materia"] = "Generale"
+                if "table_md" not in q: q["table_md"] = ""
             return data
     return []
 
@@ -25,6 +24,7 @@ def save_data(data):
         json.dump(data, f, indent=4)
 
 def estrai_tabella_da_testo(testo_completo):
+    """Separa le tabelle di Word dal resto della domanda"""
     if not testo_completo.strip():
         return "", ""
         
@@ -57,6 +57,62 @@ def estrai_tabella_da_testo(testo_completo):
     question_clean = "\n\n".join(blocchi)
     return question_clean, ""
 
+def processa_inserimento_magico(testo_raw):
+    """
+    Legge il blocco incollato. Se trova 'a.', 'b.', 'c.', 'd.' estrae le opzioni.
+    Se c'è un asterisco '*c.', quella diventa la risposta corretta.
+    """
+    lines = testo_raw.split('\n')
+    domanda_lines = []
+    opzioni = []
+    opzione_corrente = ""
+    corretta_idx = -1
+    
+    # Regex: Cerca opzionale asterisco, lettera (a-e), punto o parentesi, spazio e il testo
+    pattern = re.compile(r'^(\*?)[a-eA-E][\.\)]\s+(.*)')
+    
+    for line in lines:
+        line_str = line.strip()
+        if not line_str:
+            if not opzione_corrente: 
+                domanda_lines.append(line)
+            continue
+            
+        match = pattern.match(line_str)
+        if match:
+            if opzione_corrente: # Salva l'opzione precedente
+                opzioni.append(opzione_corrente.strip())
+            is_correct = bool(match.group(1)) # True se c'è l'asterisco
+            opzione_corrente = match.group(2).strip()
+            if is_correct:
+                corretta_idx = len(opzioni)
+        else:
+            if opzioni or opzione_corrente:
+                # È una riga che va a capo dentro un'opzione di risposta
+                opzione_corrente += " " + line_str
+            else:
+                # Fa ancora parte della domanda
+                domanda_lines.append(line)
+                
+    if opzione_corrente:
+        opzioni.append(opzione_corrente.strip())
+        
+    testo_domanda = "\n".join(domanda_lines).strip()
+    
+    corretta = ""
+    sbagliate = []
+    
+    if opzioni:
+        if corretta_idx == -1:
+            # Nessun asterisco: diamo per scontato che la 'a.' sia quella corretta
+            corretta = opzioni[0]
+            sbagliate = opzioni[1:]
+        else:
+            corretta = opzioni[corretta_idx]
+            sbagliate = [opt for i, opt in enumerate(opzioni) if i != corretta_idx]
+            
+    return testo_domanda, corretta, sbagliate
+
 # --- 2. INIZIALIZZAZIONE STATO ---
 if 'db' not in st.session_state:
     st.session_state.db = load_data()
@@ -74,7 +130,6 @@ if 'risposto' not in st.session_state:
     st.session_state.risposto = False
 if 'scelta_utente' not in st.session_state:
     st.session_state.scelta_utente = None
-
 if 'form_key' not in st.session_state:
     st.session_state.form_key = 0
 if 'show_success' not in st.session_state:
@@ -101,91 +156,110 @@ with st.sidebar:
 if app_mode == "👨‍🏫 Area Professore":
     st.title("👨‍🏫 Area Professore")
     
-    tab_inserisci, tab_gestisci = st.tabs(["➕ Inserimento Rapido", "🗄️ Banca Domande"])
+    # --- IL LUCCHETTO CON PASSWORD ---
+    password_inserita = st.sidebar.text_input("🔒 Inserisci Password:", type="password")
     
-    # --- TAB 1: INSERIMENTO ---
-    with tab_inserisci:
+    if password_inserita == "admin": 
+        tab_inserisci, tab_gestisci = st.tabs(["➕ Inserimento Rapido", "🗄️ Banca Domande"])
         
-        # IL NUOVO SISTEMA DI NOTIFICA FLUTTUANTE (TOAST)
-        if st.session_state.show_success:
-            st.toast("Domanda archiviata con successo!", icon="✅")
-            st.session_state.show_success = False
-            
-        col1, col2 = st.columns([1, 1])
-        fk = st.session_state.form_key
-        
-        with col1:
-            scelta_inserimento = st.selectbox("Scegli Materia:", ["+ Crea Nuova Materia"] + materie_esistenti)
-            if scelta_inserimento == "+ Crea Nuova Materia":
-                materia_input = st.text_input("Nome nuova materia:")
-            else:
-                materia_input = scelta_inserimento
+        # --- TAB 1: INSERIMENTO ---
+        with tab_inserisci:
+            if st.session_state.show_success:
+                st.toast("Domanda archiviata con successo!", icon="✅")
+                st.session_state.show_success = False
                 
-            correct_a = st.text_input("✔️ Risposta Corretta:", key=f"c_{fk}")
-            wrong_1 = st.text_input("❌ Sbagliata 1:", key=f"w1_{fk}")
-            wrong_2 = st.text_input("❌ Sbagliata 2 (Opzionale):", key=f"w2_{fk}")
-            wrong_3 = st.text_input("❌ Sbagliata 3 (Opzionale):", key=f"w3_{fk}")
-            
-        with col2:
-            new_q_raw = st.text_area("Testo della Domanda (Testo e Tabelle):", height=280, key=f"q_{fk}")
-            
-        if st.button("💾 Salva nel Database", type="primary", use_container_width=True):
-            if new_q_raw and correct_a and wrong_1 and materia_input:
-                materia_pulita = materia_input.strip().upper()
-                wrongs = [w for w in [wrong_1, wrong_2, wrong_3] if w.strip() != ""]
-                question_clean, tabella_md = estrai_tabella_da_testo(new_q_raw)
+            st.info("💡 **Novità Copia-Incolla Magico:** Incolla l'intero blocco (Domanda + a. b. c. d.) nel box di destra. Metti un asterisco `*` prima della risposta esatta e clicca Salva. Il bot farà tutto da solo!")
                 
-                st.session_state.db.append({
-                    "materia": materia_pulita,
-                    "question": question_clean,
-                    "table_md": tabella_md, 
-                    "correct": correct_a,
-                    "wrongs": wrongs
-                })
-                save_data(st.session_state.db)
+            col1, col2 = st.columns([1, 1])
+            fk = st.session_state.form_key
+            
+            with col1:
+                scelta_inserimento = st.selectbox("Scegli Materia:", ["+ Crea Nuova Materia"] + materie_esistenti)
+                if scelta_inserimento == "+ Crea Nuova Materia":
+                    materia_input = st.text_input("Nome nuova materia:")
+                else:
+                    materia_input = scelta_inserimento
+                    
+                st.write("**Compilazione Manuale (Opzionale):**")
+                correct_a = st.text_input("✔️ Risposta Corretta:", key=f"c_{fk}", placeholder="Lascia vuoto se usi il copia-incolla magico")
+                wrong_1 = st.text_input("❌ Sbagliata 1:", key=f"w1_{fk}")
+                wrong_2 = st.text_input("❌ Sbagliata 2:", key=f"w2_{fk}")
+                wrong_3 = st.text_input("❌ Sbagliata 3:", key=f"w3_{fk}")
                 
-                st.session_state.form_key += 1
-                st.session_state.show_success = True
-                st.rerun()
-            else:
-                st.error("Inserisci Materia, Domanda, Risposta giusta e almeno una sbagliata.")
+            with col2:
+                new_q_raw = st.text_area("Testo della Domanda o INCOLLA BLOCCO COMPLETO:", height=320, key=f"q_{fk}", 
+                                         placeholder="Esempio:\nQuanto fa 2+2?\na. 3\n*b. 4\nc. 5\nd. 6")
+                
+            if st.button("💾 Analizza e Salva nel Database", type="primary", use_container_width=True):
+                if new_q_raw and materia_input:
+                    materia_pulita = materia_input.strip().upper()
+                    
+                    # PASSIAMO IL TESTO AL PARSER MAGICO
+                    q_pura, opt_corr, opt_sbagliate = processa_inserimento_magico(new_q_raw)
+                    
+                    # Se il parser ha trovato delle opzioni, usiamo quelle. Altrimenti fallback ai box manuali.
+                    final_correct = opt_corr if opt_corr else correct_a
+                    final_wrongs = opt_sbagliate if opt_sbagliate else [w for w in [wrong_1, wrong_2, wrong_3] if w.strip() != ""]
+                    
+                    if q_pura and final_correct and final_wrongs:
+                        # Estraiamo l'eventuale tabella dal testo purificato
+                        question_clean, tabella_md = estrai_tabella_da_testo(q_pura)
+                        
+                        st.session_state.db.append({
+                            "materia": materia_pulita,
+                            "question": question_clean,
+                            "table_md": tabella_md, 
+                            "correct": final_correct,
+                            "wrongs": final_wrongs
+                        })
+                        save_data(st.session_state.db)
+                        
+                        st.session_state.form_key += 1
+                        st.session_state.show_success = True
+                        st.rerun()
+                    else:
+                        st.error("Assicurati di incollare le opzioni a., b., c., d. o di compilare i campi manuali della risposta giusta e sbagliata.")
+                else:
+                    st.error("Inserisci il Testo e la Materia.")
 
-    # --- TAB 2: BANCA DOMANDE (Modifica/Elimina) ---
-    with tab_gestisci:
-        if len(st.session_state.db) == 0:
-            st.info("Il database è vuoto.")
-        else:
-            filtro_materia = st.selectbox("Filtra per Materia:", materie_esistenti)
-            st.write("---")
-            
-            for idx, q in enumerate(st.session_state.db):
-                if q["materia"] == filtro_materia:
-                    titolo_expander = q["question"][:60].replace("\n", " ") + "..."
-                    with st.expander(f"📝 {titolo_expander}"):
-                        
-                        edit_q = st.text_area("Testo Domanda (Markdown/Tabella supportata)", q["question"], height=150, key=f"edit_q_{idx}")
-                        
-                        col_a, col_b = st.columns(2)
-                        with col_a:
-                            edit_corr = st.text_input("Risposta Corretta", q["correct"], key=f"edit_c_{idx}")
-                        with col_b:
-                            wrongs_str = ", ".join(q["wrongs"])
-                            edit_wrongs = st.text_input("Risposte Sbagliate (separate da virgola)", wrongs_str, key=f"edit_w_{idx}")
+        # --- TAB 2: BANCA DOMANDE (Modifica/Elimina) ---
+        with tab_gestisci:
+            if len(st.session_state.db) == 0:
+                st.info("Il database è vuoto.")
+            else:
+                filtro_materia = st.selectbox("Filtra per Materia:", materie_esistenti)
+                st.write("---")
+                
+                for idx, q in enumerate(st.session_state.db):
+                    if q["materia"] == filtro_materia:
+                        titolo_expander = q["question"][:60].replace("\n", " ") + "..."
+                        with st.expander(f"📝 {titolo_expander}"):
                             
-                        col_save, col_del = st.columns([3, 1])
-                        with col_save:
-                            if st.button("🔄 Aggiorna Domanda", key=f"save_{idx}"):
-                                st.session_state.db[idx]["question"] = edit_q
-                                st.session_state.db[idx]["correct"] = edit_corr
-                                st.session_state.db[idx]["wrongs"] = [w.strip() for w in edit_wrongs.split(",") if w.strip()]
-                                save_data(st.session_state.db)
-                                st.toast("Domanda aggiornata!", icon="🔄")
-                                st.rerun()
-                        with col_del:
-                            if st.button("🗑️ Elimina", type="primary", key=f"del_{idx}"):
-                                st.session_state.db.pop(idx)
-                                save_data(st.session_state.db)
-                                st.rerun()
+                            edit_q = st.text_area("Testo Domanda", q["question"], height=150, key=f"edit_q_{idx}")
+                            
+                            col_a, col_b = st.columns(2)
+                            with col_a:
+                                edit_corr = st.text_input("Risposta Corretta", q["correct"], key=f"edit_c_{idx}")
+                            with col_b:
+                                wrongs_str = ", ".join(q["wrongs"])
+                                edit_wrongs = st.text_input("Risposte Sbagliate (separate da virgola)", wrongs_str, key=f"edit_w_{idx}")
+                                
+                            col_save, col_del = st.columns([3, 1])
+                            with col_save:
+                                if st.button("🔄 Aggiorna Domanda", key=f"save_{idx}"):
+                                    st.session_state.db[idx]["question"] = edit_q
+                                    st.session_state.db[idx]["correct"] = edit_corr
+                                    st.session_state.db[idx]["wrongs"] = [w.strip() for w in edit_wrongs.split(",") if w.strip()]
+                                    save_data(st.session_state.db)
+                                    st.toast("Domanda aggiornata!", icon="🔄")
+                                    st.rerun()
+                            with col_del:
+                                if st.button("🗑️ Elimina", type="primary", key=f"del_{idx}"):
+                                    st.session_state.db.pop(idx)
+                                    save_data(st.session_state.db)
+                                    st.rerun()
+    else:
+        st.warning("🔒 Area riservata all'Amministratore. Inserisci la password nella barra laterale sinistra per sbloccare i comandi.")
 
 # ==========================================
 # AREA STUDENTE (QUIZ ATTIVO)
